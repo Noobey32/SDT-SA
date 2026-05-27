@@ -8,7 +8,7 @@ namespace SectionC
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e){}
+        private void label2_Click(object sender, EventArgs e) { }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -26,6 +26,26 @@ namespace SectionC
                     break;
                 }
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            // delete the inventory item with the specified code
+            string code = txtCode.Text;
+            bool found = false;
+            
+            for (int i = 0; i < inv.Length; i++)
+            {
+                if (inv[i] != null && inv[i].MobileCode == code)
+                {
+                    inv[i] = null;
+                    MessageBox.Show("Record Found!");
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (!found) MessageBox.Show("Record Not Found");
         }
     }
 }
