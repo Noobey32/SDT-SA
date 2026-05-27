@@ -6,5 +6,10 @@ namespace SectionB_22
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Hello, {txtName.Text}!");
+        }
     }
 }

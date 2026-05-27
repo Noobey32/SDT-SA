@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txt1 = new TextBox();
+            txtName = new TextBox();
             btnSubmit = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // txt1
+            // txtName
             // 
-            txt1.Location = new Point(379, 158);
-            txt1.Name = "txt1";
-            txt1.Size = new Size(194, 23);
-            txt1.TabIndex = 0;
+            txtName.Location = new Point(379, 158);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(194, 23);
+            txtName.TabIndex = 0;
             // 
             // btnSubmit
             // 
@@ -48,6 +48,7 @@
             btnSubmit.TabIndex = 1;
             btnSubmit.Text = "Greeting";
             btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // label1
             // 
@@ -65,7 +66,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
             Controls.Add(btnSubmit);
-            Controls.Add(txt1);
+            Controls.Add(txtName);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -74,7 +75,7 @@
 
         #endregion
 
-        private TextBox txt1;
+        private TextBox txtName;
         private Button btnSubmit;
         private Label label1;
     }
