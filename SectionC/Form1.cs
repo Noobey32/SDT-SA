@@ -22,7 +22,7 @@ namespace SectionC
                 if (inv[i] == null)
                 {
                     inv[i] = new inventory(code, make, quantity);
-                    MessageBox.Show("Record Added Successfully!");
+                    lblOutput.Text = "Record Added!";
                     break;
                 }
             }
@@ -33,19 +33,34 @@ namespace SectionC
             // delete the inventory item with the specified code
             string code = txtCode.Text;
             bool found = false;
-            
+
             for (int i = 0; i < inv.Length; i++)
             {
                 if (inv[i] != null && inv[i].MobileCode == code)
                 {
                     inv[i] = null;
-                    MessageBox.Show("Record Found!");
+                    lblOutput.Text = "Record Found!";
                     found = true;
                     break;
                 }
             }
-            
-            if (!found) MessageBox.Show("Record Not Found");
+
+            if (!found) lblOutput.Text = "Record Not Found!";
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            // indicated the presence of the inventory item with the specified code
+            string code = txtCode.Text;
+
+            for (int i = 0; i < inv.Length; i++)
+            {
+                if (inv[i] != null && inv[i].MobileCode == code)
+                {
+                    lblOutput.Text = "Record Deleted!";
+                    break;
+                }
+            }
         }
     }
 }

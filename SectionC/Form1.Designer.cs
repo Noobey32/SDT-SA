@@ -89,6 +89,7 @@
             btnFind.TabIndex = 5;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // lblOutput
             // 
