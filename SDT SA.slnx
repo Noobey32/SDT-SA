@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="SectionB-1/SectionB-1.csproj" />
-  <Project Path="SectionB-22/SectionB-22.csproj" Id="6af86438-82f0-4e84-ad1a-ca3546a6462b" />
+  <Project Path="SectionB-22/SectionB-22.csproj" Id="6af86438-82f0-4e84-ad1a-ca3546a6462b">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="SectionC/SectionC.csproj" Id="5351a98f-aed7-45db-999e-59b637c9604d" />
 </Solution>
