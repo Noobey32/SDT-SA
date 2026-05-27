@@ -18,9 +18,9 @@ namespace SectionC
             string make = txtMake.Text.Trim();
             string quantity = txtQuantity.Text.Trim();
 
-            if (code == "")
+            if (code == "" || make == "" || quantity == "")
             {
-                lblOutput.Text = "Please enter a code.";
+                lblOutput.Text = "Please enter all fields.";
                 txtCode.Focus();
                 return;
             }
