@@ -34,7 +34,7 @@ namespace SectionC
                 {
                     lblOutput.Text = "Record already exists!";
                     found = true;
-                    break;
+                    return;
                 }
                 else if (inv[i] == null && !foundEmptyIndex)
                 {
