@@ -30,7 +30,7 @@
         {
             txtCode = new TextBox();
             txtMake = new TextBox();
-            txtModel = new TextBox();
+            txtQuantity = new TextBox();
             btnAdd = new Button();
             btnDelete = new Button();
             btnFind = new Button();
@@ -54,12 +54,12 @@
             txtMake.Size = new Size(146, 23);
             txtMake.TabIndex = 1;
             // 
-            // txtModel
+            // txtQuantity
             // 
-            txtModel.Location = new Point(373, 157);
-            txtModel.Name = "txtModel";
-            txtModel.Size = new Size(146, 23);
-            txtModel.TabIndex = 2;
+            txtQuantity.Location = new Point(373, 157);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(146, 23);
+            txtQuantity.TabIndex = 2;
             // 
             // btnAdd
             // 
@@ -69,6 +69,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
@@ -136,7 +137,7 @@
             Controls.Add(btnFind);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
-            Controls.Add(txtModel);
+            Controls.Add(txtQuantity);
             Controls.Add(txtMake);
             Controls.Add(txtCode);
             Name = "Form1";
@@ -149,7 +150,7 @@
 
         private TextBox txtCode;
         private TextBox txtMake;
-        private TextBox txtModel;
+        private TextBox txtQuantity;
         private Button btnAdd;
         private Button btnDelete;
         private Button btnFind;
